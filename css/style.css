@@ -1,0 +1,68 @@
+* {
+    font-family: verdana;
+    font-size: 1.07em;
+    color: white;
+    text-align: center;
+}
+
+body {
+    margin-top: 10px;
+    background: #a2a2a2;
+    background-image: url("https://source.unsplash.com/GI1hwOGqGtE/2400x1400");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(12, 200px);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    background: rgb(146, 10, 10);
+    height: 200px;
+    box-shadow: 3px 2px 16px #404040;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 450px){
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+    .calc {
+        grid-column: 2 / 2;
+    }
+    .portfolio {
+        grid-column: 5 / 5;
+        grid-row: 1 / 1;
+    }
+    .gallery {
+        grid-column: 5 / 5;
+        grid-row: 3 / 3;
+    }
+    .social {
+        grid-column: 1 / 1;
+        grid-row: 2 /;
+    }
+    .lights {
+        grid-column: 4 / 4;
+        grid-row: 4 / 4;
+    }
+    .quote {
+        grid-column: 4 / 4;
+        grid-row: 2 / 2;
+    }
+    .weather {
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+    }
+    .random {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
